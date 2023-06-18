@@ -23,6 +23,9 @@ module.exports = {
         ColorD: "#E1ECC8",
         ColorE: "#F7FFE5",
       },
+      rotate: {
+        n45: "-45deg",
+      },
     },
   },
   plugins: [],
