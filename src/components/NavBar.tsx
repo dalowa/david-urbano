@@ -8,7 +8,7 @@ export default function NavBar() {
 
   return (
     <>
-      <div className="flex items-center justify-between px-3 py-1 fixed w-full z-20 top-0 bg-ColorABlur xl:h-20 xl:w-auto  xl:bg-transparent">
+      <div className="flex items-center justify-between px-3 py-1 fixed w-full z-20 top-0 bg-ColorBOpacity50 xl:h-20 xl:w-auto  xl:bg-transparent">
         <Image
           src={
             "https://raw.githubusercontent.com/dalowa/david-urbano/8250a1e35a2a09bfd32eb9788b2f4a003114953a/public/favicon.svg"
