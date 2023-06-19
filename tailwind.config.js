@@ -23,6 +23,7 @@ module.exports = {
         ColorC: "#C4D7B2",
         ColorD: "#E1ECC8",
         ColorE: "#F7FFE5",
+        WhiteOpacity50: "#ffffffBF",
       },
       rotate: {
         n45: "-45deg",
