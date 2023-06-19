@@ -68,13 +68,13 @@ export default function NavBar() {
               <a href="#AboutMe">AboutMe</a>
             </li>
             <li className="transition px-2 py-3 border-2 border-black flex justify-center rounded-xl xl:py-1 xl:border-0 cursor-pointer hover:border-b-8 xl:border-ColorB">
-              <a>Education</a>
+              <a href="#Education">Education</a>
             </li>
             <li className="transition px-2 py-3 border-2 border-black flex justify-center rounded-xl xl:py-1 xl:border-0 cursor-pointer hover:border-b-8 xl:border-ColorB">
-              <a>Projects</a>
+              <a href="#Projects">Projects</a>
             </li>
             <li className="transition px-2 py-3 border-2 border-black flex justify-center rounded-xl xl:py-1 xl:border-0 cursor-pointer hover:border-b-8 xl:border-ColorB">
-              <a>ContactMe</a>
+              <a href="#ContactMe">ContactMe</a>
             </li>
             <li className=" px-2 py-3 border-ColorA border-2 flex justify-center text-ColorA bg-ColorE cursor-pointer transition hover:text-ColorE hover:bg-ColorA">
               <a>Resume</a>
