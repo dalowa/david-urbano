@@ -7,7 +7,7 @@ export default function Home() {
       <NavBar />
       <section className="flex flex-col xl:flex-row xl:mt-20">
         <div className="bg-ColorB flex justify-center flex-col items-center py-9 gap-5 xl:w-1/2	xl:gap-10 xl:rounded-tr-3xl">
-          <h1 className="font-PrimaryFont text-black text-4xl xl:text-8xl">
+          <h1 className="font-PrimaryFont text-black text-4xl xl:text-8xl text-center">
             David Urbano
           </h1>
           <p className="font-PrimaryFont text-ColorE text-center text-lg w-full max-w-xs xl:text-4xl xl:max-w-xl ">
