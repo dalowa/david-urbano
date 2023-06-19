@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function HomeSec() {
   return (
-    <section className="flex flex-col xl:flex-row xl:mt-20">
+    <section className="flex flex-col xl:flex-row xl:pt-20" id="Home">
       <div className="bg-ColorB flex justify-center flex-col items-center py-9 gap-5 xl:w-1/2	xl:gap-10 xl:rounded-tr-3xl">
         <h1 className="font-PrimaryFont text-black text-4xl xl:text-8xl text-center">
           David Urbano
