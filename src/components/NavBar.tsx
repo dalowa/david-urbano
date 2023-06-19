@@ -53,7 +53,7 @@ export default function NavBar() {
         }
       >
         <div className="w-2/5 bg-ColorE opacity-60 xl:hidden"></div>
-        <nav className="w-3/5 bg-ColorB shadow-xl shadow-black flex justify-center items-center xl:w-full xl:h-20 xl:fixed xl:bg-white xl:shadow-none xl:z-10">
+        <nav className="w-3/5 bg-ColorB shadow-xl shadow-black flex justify-center items-center xl:w-full xl:h-20 xl:fixed xl:bg-white xl:shadow-md xl:shadow-ColorB xl:z-10">
           <ul className="font-PrimaryFont text-ColorE flex flex-col gap-5 text-xl xl:flex-row xl:justify-end xl:w-full xl:text-ColorB xl:px-5">
             <li className="px-2 py-3 border-2 border-ColorE flex justify-center rounded-xl xl:border-none cursor-pointer">
               <a>Home</a>
