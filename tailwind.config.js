@@ -18,7 +18,7 @@ module.exports = {
       },
       colors: {
         ColorA: "#637961",
-        ColorABlur: "#637961BF",
+        ColorBOpacity50: "#A0C49DBF",
         ColorB: "#A0C49D",
         ColorC: "#C4D7B2",
         ColorD: "#E1ECC8",
