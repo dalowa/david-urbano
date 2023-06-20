@@ -4,7 +4,7 @@ import TechIconCard from "../TechIconCard";
 
 export default function EducationSec() {
   return (
-    <section className="p-1 xl:py-20 xl:px-80 xl:pb-32">
+    <section className="p-1 xl:py-20 xl:px-80 xl:pb-32" id="Education">
       <div className="flex flex-col">
         <h2 className="text-2xl text-ColorA font-PrimaryFont p-2 xl:text-5xl ">{`=> Education`}</h2>
         <div className="font-SecondaryFont flex flex-col xl:flex-row xl:items-center xl:gap-10 xl:w-full xl:justify-around">
