@@ -11,7 +11,7 @@ export default function EducationSec() {
           <div className="flex flex-col gap-5 my-5 text-xl font-semibold text-center xl:text-3xl">
             <div className="flex items-center justify-center gap-5">
               <h4 className="text-ColorB w-44 xl:w-72">
-                Selft-taught - Web Development
+                Self-taught - Web Development
               </h4>
               <span className="text-black bg-ColorC p-2 rounded-lg xl:p-4">
                 2022 - Present
