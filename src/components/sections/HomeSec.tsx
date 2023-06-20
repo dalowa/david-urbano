@@ -18,7 +18,7 @@ export default function HomeSec() {
           }
           alt={"Pino"}
           priority={true}
-          width={0o0}
+          width={350}
           height={0o0}
           className="w-24 h-auto xl:w-64 xl:h-auto"
         />
