@@ -3,20 +3,20 @@ import Image from "next/image";
 export default function AboutMeSec() {
   return (
     <section
-      className="bg-ColorC p-5 xl:pt-24 xl:pb-44 xl:px-36 xl:w-full xl:flex xl:justify-center"
+      className="bg-ColorC p-5 sm:p-10 xl:pt-24 xl:pb-36 xl:px-36 xl:w-full xl:flex xl:justify-center"
       id="AboutMe"
     >
       <div className="flex flex-col gap-5 xl:flex-col xl:px-0 xl:gap-1 xl:w-full xl:max-w-6xl xl:justify-center xl:items-center">
-        <h2 className="font-PrimaryFont text-ColorE text-2xl xl:text-5xl xl:w-full xl:my-5">{`=> About Me`}</h2>
+        <h2 className="font-PrimaryFont text-ColorE text-2xl md:text-3xl lg:text-4xl xl:text-5xl xl:w-full xl:my-5">{`=> About Me`}</h2>
         <div className="flex flex-col gap-5 xl:flex-row xl:p-3">
           <div className="flex flex-col gap-5 xl:gap-10">
-            <p className="font-SecondaryFont text-base xl:text-2xl xl:w-4/5">
+            <p className="font-SecondaryFont text-base lg:text-2xl lg:w-4/5 mx-auto md:text-xl md:text-right xl:text-left">
               {`I am a young bilingual web developer located in Lima, Peru. I love the
       idea of being able to create something that can change someone's life
       for the better and I like to think that we can make a better world
       with the help of software`}
             </p>
-            <h4 className="font-SecondaryFont text-ColorA w-full text-right xl:w-4/5 xl:text-2xl">
+            <h4 className="font-SecondaryFont text-ColorA w-full md:text-lg lg:w-4/5 lg:mx-auto lg:text-xl text-right xl:w-4/5 xl:text-2xl ">
               Read more about me{" "}
               <a className="font-bold underline underline-offset-2 cursor-pointer hover:text-ColorE transition">
                 here
