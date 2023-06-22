@@ -3,10 +3,10 @@ import Image from "next/image";
 export default function AboutMeSec() {
   return (
     <section
-      className="bg-ColorC sm:p-10 xl:pt-24 xl:pb-36  xl:w-full xl:flex xl:justify-center"
+      className="bg-ColorC flex flex-col items-center py-5 sm:p-10 xl:pt-24 xl:pb-36  xl:w-full xl:flex xl:justify-center"
       id="AboutMe"
     >
-      <div className="flex flex-col gap-5 xl:flex-col xl:px-0 xl:gap-1 xl:w-10/12 xl:justify-center xl:items-center 2xl:w-11/12">
+      <div className=" w-11/12 flex flex-col gap-5 xl:flex-col xl:px-0 xl:gap-1 xl:w-10/12 xl:justify-center xl:items-center 2xl:w-11/12">
         <h2 className="font-PrimaryFont text-ColorE text-2xl md:text-3xl lg:text-4xl xl:text-5xl xl:w-full xl:my-5">{`=> About Me`}</h2>
         <div className="flex flex-col gap-5 lg:flex-row xl:p-3 2xl:p-0">
           <div className="flex flex-col gap-5 xl:gap-10 lg:w-6/12 2xl:justify-end 2xl:items-end">
