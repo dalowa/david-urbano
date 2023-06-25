@@ -1,20 +1,12 @@
-import Head from "next/head";
 import "./globals.css";
-import { Inter } from "next/font/google";
-import { Mochiy_Pop_One } from "next/font/google";
-import { Roboto_Slab } from "next/font/google";
+import { Inter, Fira_Code, Roboto_Mono } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"] });
-const MochiyPopOne = Mochiy_Pop_One({
-  subsets: ["latin"],
-  weight: "400",
-  style: "normal",
-  variable: "--PrimaryFont",
-});
+const inter = Inter({ subsets: ["latin"], variable: "--fontInter" });
+const FiraCode = Fira_Code({ subsets: ["latin"], variable: "--fontFiraCode" });
 
-const RobotoSlab = Roboto_Slab({
+const RobotoMono = Roboto_Mono({
   subsets: ["latin"],
-  variable: "--SecondaryFont",
+  variable: "--fontRobotoMono",
 });
 
 export const metadata = {
@@ -32,11 +24,11 @@ export default function RootLayout({
       <head>
         <link
           rel="icon"
-          href="https://raw.githubusercontent.com/dalowa/david-urbano/f5ca405639740d560f78ebe0e43c9dd3b9c71511/public/favicon.svg"
+          href="https://raw.githubusercontent.com/dalowa/david-urbano/cb99741e256698f6151e2ba880a8aa50723d6eeb/public/new-d.svg"
         />
       </head>
       <body
-        className={`${inter.className} ${MochiyPopOne.variable} ${RobotoSlab.variable}`}
+        className={`${inter.variable} ${FiraCode.variable} ${RobotoMono.variable}} bg-ColorAzulMarino`}
       >
         {children}
       </body>
