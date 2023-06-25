@@ -30,3 +30,9 @@ html {
   ::-webkit-scrollbar-thumb:hover {
     background: #E1ECC8;
   }
+
+  body.hide {
+    overflow: hidden;
+    height: 100vh;
+  }
+
