@@ -13,22 +13,22 @@ html {
 
 /* width */
 ::-webkit-scrollbar {
-    width: 7.5px;
+    width: 3px;
   }
   
   /* Track */
   ::-webkit-scrollbar-track {
-    background: #A0C49D;
+    background: #0a192f;
   }
   
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: #F7FFE5;
+    background: #64ffda;
   }
   
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: #E1ECC8;
+    background: #0a192f;
   }
 
   body.hide {
