@@ -7,7 +7,7 @@ export default function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
   const NavBarOptions = ["Home", "About", "Education", "Projects", "Contact"];
   const [previousScrollPosition, setPreviousScrollPosition] = useState(
-    window.scrollY
+    window ? window.scrollY : 0
   );
   const [visible, setVisible] = useState(true);
 
