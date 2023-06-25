@@ -128,7 +128,7 @@ export default function NavBar() {
                     <span className="text-ColorCeleste text-sm ">{`0${
                       i + 1
                     }.`}</span>
-                    <a href={`#${e}`} className="">
+                    <a href={`#${e}`} className="" onClick={handleOpenNav}>
                       {e}
                     </a>
                   </li>
