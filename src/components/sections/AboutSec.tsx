@@ -53,8 +53,8 @@ export default function AboutSec() {
             "https://raw.githubusercontent.com/dalowa/david-urbano/main/public/profile.png"
           }
           alt="David Urbano Animated Profile"
-          width={80}
-          height={80}
+          width={250}
+          height={0o0}
           priority={true}
           className="w-11/12 sm:w-7/12 md:w-6/12 lg:w-10/12 mx-auto p-1 border-2 rounded-sm border-ColorCeleste shadow-2xl shadow-ColorCeleste hover:scale-105"
         />
