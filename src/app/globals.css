@@ -36,3 +36,10 @@ html {
     height: 100vh;
   }
 
+  @media (min-width: 1024px) {
+    body.hide {
+      overflow: visible;
+      height: auto;
+    }
+  }
+
