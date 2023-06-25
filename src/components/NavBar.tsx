@@ -1,92 +1,139 @@
 "use client";
 
-import { Island_Moments } from "next/font/google";
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
+  const NavBarOptions = ["Home", "About", "Education", "Projects", "Contact"];
+  const [previousScrollPosition, setPreviousScrollPosition] = useState(
+    window.scrollY
+  );
+  const [visible, setVisible] = useState(true);
+
+  const handleOpenNav = () => {
+    if (!isOpen) {
+      document.body.classList.add("hide");
+    } else {
+      document.body.classList.remove("hide");
+    }
+    setIsOpen(!isOpen);
+  };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window) {
+        const currentScrollPosition = window.scrollY;
+        const isVisible = previousScrollPosition > currentScrollPosition;
+
+        setPreviousScrollPosition(currentScrollPosition);
+        setVisible(isVisible);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [previousScrollPosition, isOpen]);
 
   return (
     <>
-      <div
-        className={
-          isOpen
-            ? `flex items-center justify-between px-3 py-1 fixed w-full z-20 top-0 bg-transparent lg:h-20 lg:w-auto  lg:bg-transparent sm:py-3`
-            : `flex items-center justify-between px-3 py-1 fixed w-full z-20 top-0 bg-ColorBOpacity50 lg:h-20 lg:w-auto  lg:bg-transparent sm:py-3`
-        }
-      >
-        <Image
-          src={
-            "https://raw.githubusercontent.com/dalowa/david-urbano/8250a1e35a2a09bfd32eb9788b2f4a003114953a/public/favicon.svg"
-          }
-          alt="Logo"
-          width={0o0}
-          height={0o0}
-          className="h-auto w-8 sm:w-14 lg:h-16 lg:w-16"
-        />
+      {visible && (
+        <>
+          <header
+            className={
+              isOpen
+                ? ` transition-all flex items-center justify-between p-6 ${
+                    previousScrollPosition == 0
+                      ? "py-6 sm:py-3 lg:py-5 xl:py-5"
+                      : "py-3 sm:py-1 lg:py-3 xl:py-2"
+                  } fixed w-full z-20 top-0 bg-transparent lg:w-auto  lg:bg-transparent lg:px-10`
+                : ` transition-all flex items-center justify-between p-6 ${
+                    previousScrollPosition == 0
+                      ? "py-6 lg:bg-transparent sm:py-4 lg:py-5 xl:py-5"
+                      : "py-3 lg:bg-transparent sm:py-1 lg:py-2 xl:py-2 "
+                  } fixed w-full z-20 top-0 bg-ColorAzulMarinoOpaco lg:w-auto lg:px-10 `
+            }
+          >
+            <Image
+              src={
+                "https://raw.githubusercontent.com/dalowa/david-urbano/cb99741e256698f6151e2ba880a8aa50723d6eeb/public/new-d.svg"
+              }
+              alt="Logo"
+              width={0o0}
+              height={0o0}
+              className="h-auto w-14 sm:w-14 lg:w-12 lg:h-auto xl:w-14"
+            />
 
-        <div
-          className="flex flex-col gap-1 lg:hidden items-center"
-          onClick={() => {
-            setIsOpen(!isOpen);
-          }}
-        >
-          <div
+            <div
+              className="flex flex-col gap-0 lg:hidden items-end justify-between w-10 h-6"
+              onClick={handleOpenNav}
+            >
+              <div
+                className={
+                  isOpen
+                    ? `h-0.5 w-10/12 bg-ColorCeleste origin-top-left rotate-45 transition-transform`
+                    : `h-0.5 w-full bg-ColorCeleste transition-transform`
+                }
+              ></div>
+              <div
+                className={
+                  isOpen
+                    ? `h-1 w-6 bg-ColorB transition-transform`
+                    : `h-0.5 w-10/12 bg-ColorCeleste transition-transform`
+                }
+              ></div>
+              <div
+                className={
+                  isOpen
+                    ? `h-0.5 w-10/12 bg-ColorCeleste origin-bottom-left rotate-n45 transition-transform `
+                    : `h-0.5 w-7/12 bg-ColorCeleste transition-transform`
+                }
+              ></div>
+            </div>
+          </header>
+          <aside
             className={
               isOpen
-                ? `h-1 w-6 bg-ColorE origin-top-left rotate-45 transition-transform sm:h-2 sm:w-10`
-                : `h-1 w-6 bg-ColorE transition-transform sm:h-2 sm:w-10 `
+                ? `fixed flex w-screen h-screen z-10 `
+                : `hidden lg:flex z-10`
             }
-          ></div>
-          <div
-            className={
-              isOpen
-                ? `h-1 w-6 bg-ColorB transition-transform sm:h-2 sm:w-10`
-                : `h-1 w-6 bg-ColorE transition-transform sm:h-2 sm:w-10`
-            }
-          ></div>
-          <div
-            className={
-              isOpen
-                ? `h-1 w-6 bg-ColorE origin-bottom-left rotate-n45 transition-transform sm:h-2 sm:w-10`
-                : `h-1 w-6 bg-ColorE transition-transform sm:h-2 sm:w-10`
-            }
-          ></div>
-        </div>
-      </div>
-      <div
-        className={
-          isOpen ? `fixed flex w-screen h-screen z-10` : `hidden lg:flex`
-        }
-      >
-        <div
-          className="w-2/5 bg-ColorE opacity-60 lg:hidden"
-          onClick={() => setIsOpen(!isOpen)}
-        ></div>
-        <nav className="w-3/5 bg-ColorB shadow-xl shadow-black flex justify-center items-center lg:w-full lg:h-20 lg:fixed lg:bg-WhiteOpacity50 lg:shadow-md lg:shadow-ColorB lg:z-10">
-          <ul className="font-PrimaryFont text-ColorE flex flex-col gap-5 sm:text-2xl lg:items-center text-xl lg:flex-row lg:justify-end lg:w-full lg:text-ColorB lg:px-5 md:text-3xl lg:text-xl lg:gap-3 xl:gap-5">
-            <li className="transition px-2 py-3 border-2 border-black flex justify-center rounded-xl lg:py-1 lg:border-0 cursor-pointer hover:border-b-8 lg:border-ColorB md:p-5 lg:px-2">
-              <a href="#Home">Home</a>
-            </li>
-            <li className="transition px-2 py-3 border-2 border-black flex justify-center rounded-xl lg:py-1 lg:border-0 cursor-pointer hover:border-b-8 lg:border-ColorB md:p-5 lg:px-2">
-              <a href="#AboutMe">AboutMe</a>
-            </li>
-            <li className="transition px-2 py-3 border-2 border-black flex justify-center rounded-xl lg:py-1 lg:border-0 cursor-pointer hover:border-b-8 lg:border-ColorB md:p-5  lg:px-2">
-              <a href="#Education">Education</a>
-            </li>
-            <li className="transition px-2 py-3 border-2 border-black flex justify-center rounded-xl lg:py-1 lg:border-0 cursor-pointer hover:border-b-8 lg:border-ColorB md:p-5  lg:px-2">
-              <a href="#Projects">Projects</a>
-            </li>
-            <li className="transition px-2 py-3 border-2 border-black flex justify-center rounded-xl lg:py-1 lg:border-0 cursor-pointer hover:border-b-8 lg:border-ColorB md:p-5  lg:px-2">
-              <a href="#ContactMe">ContactMe</a>
-            </li>
-            <li className=" px-2 py-3 border-ColorA border-2 flex justify-center text-ColorA bg-ColorE cursor-pointer transition hover:text-ColorE hover:bg-ColorA md:p-5 lg:py-2  lg:px-2">
-              <a>Resume</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
+          >
+            <div
+              className="w-4/12 sm:w-4/12 md:w-6/12 bg-ColorAzulMarinoOpaco opacity-60 lg:hidden"
+              onClick={handleOpenNav}
+            ></div>
+            <nav
+              className={`transition-all w-8/12 sm:w-8/12 md:w-6/12  bg-ColorAzulMarinoClaro  flex justify-center items-center ${
+                previousScrollPosition == 0
+                  ? "lg:w-full lg:py-6 xl:py-8 "
+                  : "lg:w-full lg:py-3 xl:py-4 shadow-lg shadow-ColorAzulMarino"
+              } lg:px-10 lg:fixed lg:bg-ColorAzulMarinoOpaco   lg:z-10`}
+            >
+              <ul className="font-PrimaryFont text-ColorE flex flex-col gap-5 lg:items-center text-navBarMobile lg:flex-row lg:justify-end lg:w-full lg:text-navBarDesktop lg:text-ColorB lg:px-5 md:gap-2 lg:gap-3 xl:gap-5">
+                {NavBarOptions.map((e, i) => (
+                  <li
+                    key={i}
+                    className="transition px-2 py-3 text-ColorGrisClaro hover:border-b-2 border-ColorCeleste font-fontRobotoMono flex justify-center flex-col lg:flex-row items-center gap-1 rounded-xl lg:py-1 cursor-pointer md:p-5 lg:px-2"
+                  >
+                    <span className="text-ColorCeleste text-sm ">{`0${
+                      i + 1
+                    }.`}</span>
+                    <a href={`#${e}`} className="">
+                      {e}
+                    </a>
+                  </li>
+                ))}
+                <li className="hover:shadow-md hover:shadow-ColorCeleste bg-ColorAzulMarino text-ColorCeleste bg-ColorE cursor-pointer transition px-10 py-3 lg:py-2  lg:px-6 border border-ColorCeleste rounded-lg hover:bg-ColorCeleste hover:text-ColorAzulMarino">
+                  <a className="">Resume</a>
+                </li>
+              </ul>
+            </nav>
+          </aside>
+        </>
+      )}
     </>
   );
 }
