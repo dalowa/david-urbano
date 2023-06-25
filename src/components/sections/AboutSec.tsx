@@ -12,7 +12,7 @@ export default function AboutSec() {
 
   return (
     <section
-      className="bg-ColorAzulMarino min-h-screen flex flex-col items-start justify-center w-10/12 mx-auto gap-7 sm:gap-10 lg:gap-3 lg:w-10/12 xl:w-9/12 2xl:w-7/12 lg:flex-row"
+      className="bg-ColorAzulMarino py-44 min-h-screen flex flex-col items-start justify-center w-10/12 mx-auto gap-7 sm:gap-10 lg:gap-3 lg:w-10/12 xl:w-9/12 2xl:w-7/12 lg:flex-row"
       id="About"
     >
       <div className="flex flex-col gap-5 lg:w-7/12">
