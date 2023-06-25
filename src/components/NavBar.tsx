@@ -125,10 +125,10 @@ export default function NavBar() {
                     key={i}
                     className="transition px-2 py-3 text-ColorGrisClaro hover:border-b-2 border-ColorCeleste font-fontRobotoMono flex justify-center flex-col lg:flex-row items-center gap-1 rounded-xl lg:py-1 cursor-pointer md:p-5 lg:px-2"
                   >
-                    <span className="text-ColorCeleste text-sm ">{`0${
-                      i + 1
-                    }.`}</span>
                     <a href={`#${e}`} className="" onClick={handleOpenNav}>
+                      <span className="text-ColorCeleste text-sm mr-1">{`0${
+                        i + 1
+                      }.`}</span>
                       {e}
                     </a>
                   </li>
