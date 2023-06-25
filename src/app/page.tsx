@@ -1,5 +1,3 @@
-"use client";
-
 import NavBar from "@/components/NavBar";
 
 import HomeSec from "@/components/sections/HomeSec";
