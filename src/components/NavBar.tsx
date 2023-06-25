@@ -7,7 +7,7 @@ export default function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
   const NavBarOptions = ["Home", "About", "Education", "Projects", "Contact"];
   const [previousScrollPosition, setPreviousScrollPosition] = useState(
-    window ? window.scrollY : 0
+    typeof window !== "undefined" ? window.scrollY : 0
   );
   const [visible, setVisible] = useState(true);
 
@@ -22,7 +22,7 @@ export default function NavBar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window) {
+      if (typeof window !== "undefined") {
         const currentScrollPosition = window.scrollY;
         const isVisible = previousScrollPosition > currentScrollPosition;
 
@@ -31,10 +31,13 @@ export default function NavBar() {
       }
     };
 
-    window.addEventListener("scroll", handleScroll);
+    typeof window !== "undefined" &&
+      window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      if (typeof window !== "undefined") {
+        window.removeEventListener("scroll", handleScroll);
+      }
     };
   }, [previousScrollPosition, isOpen]);
 
