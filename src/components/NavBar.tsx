@@ -5,9 +5,13 @@ import { useState, useEffect } from "react";
 
 export default function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
-  const NavBarOptions = ["Home", "About", "Education", "Projects", "Contact"];
+  const NavBarOptions = ["Home", "About", "Projects", "Contact"];
   const [previousScrollPosition, setPreviousScrollPosition] = useState(
-    typeof window !== "undefined" ? window.scrollY : 0
+    typeof window !== "undefined"
+      ? window.scrollY !== 0
+        ? 0
+        : window.scrollY
+      : 0
   );
   const [visible, setVisible] = useState(true);
 
