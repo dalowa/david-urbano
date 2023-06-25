@@ -56,7 +56,7 @@ export default function AboutSec() {
           width={250}
           height={0o0}
           priority={true}
-          className="w-11/12 sm:w-7/12 md:w-6/12 lg:w-10/12 mx-auto p-1 border-2 rounded-sm border-ColorCeleste shadow-2xl shadow-ColorCeleste hover:scale-105"
+          className="w-11/12 sm:w-7/12 md:w-6/12 lg:w-10/12 mx-auto p-1 border-2 rounded-sm border-ColorCeleste shadow-2xl shadow-ColorCeleste"
         />
       </div>
     </section>
