@@ -31,7 +31,7 @@ module.exports = {
         n45: "-45deg",
       },
       fontSize: {
-        Title: "clamp(40px, 7vw, 80px)",
+        Title: "clamp(35px, 7vw, 80px)",
         SubTitle: "clamp(10px, 5vw, 17px)",
         navBarMobile: "clamp(10px, 5vw, 20px)",
         navBarDesktop: "clamp(10px, 5vw, 15px)",
