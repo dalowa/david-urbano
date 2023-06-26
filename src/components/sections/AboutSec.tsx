@@ -29,7 +29,11 @@ export default function AboutSec() {
           and for more than a year I have been learning web development in a
           self-taught way, with YouTube videos, documentation and a lot of
           practice. Its been quite fun. This year 2023 I decided to study at{" "}
-          <a href="https://isil.pe/" className="text-ColorCeleste font-bold">
+          <a
+            href="https://isil.pe/"
+            target="_blank"
+            className="text-ColorCeleste font-bold"
+          >
             ISIL
           </a>{" "}
           to study software engineering formally. I firmly believe that we can
