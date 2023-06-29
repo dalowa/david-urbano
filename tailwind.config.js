@@ -32,7 +32,7 @@ module.exports = {
       },
       fontSize: {
         Title: "clamp(35px, 7vw, 80px)",
-        SubTitle: "clamp(10px, 5vw, 17px)",
+        SubTitle: "clamp(10px, 5vw, 19px)",
         navBarMobile: "clamp(10px, 5vw, 20px)",
         navBarDesktop: "clamp(10px, 5vw, 15px)",
         titleSection: "clamp(22px, 5vw, 32px)",
