@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function HomeSec() {
   return (
     <section
-      className="bg-ColorAzulMarino h-screen flex flex-col items-start justify-center w-10/12 mx-auto gap-1 sm:gap-5 lg:gap-3 lg:w-10/12 xl:w-9/12 2xl:w-7/12"
+      className="bg-ColorAzulMarino h-screen flex flex-col items-start justify-center w-10/12 mx-auto gap-3 sm:gap-5 lg:gap-3 lg:w-10/12 xl:w-9/12 2xl:w-7/12"
       id="Home"
     >
       <h3 className="text-ColorCeleste font-extralight text-xl">
