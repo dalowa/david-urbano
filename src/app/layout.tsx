@@ -12,8 +12,6 @@ const RobotoMono = Roboto_Mono({
 export const metadata = {
   title: "David Urbano",
   description: "Web Developer - Software Engineer Student",
-  image:
-    "https://raw.githubusercontent.com/dalowa/david-urbano/main/public/profile.png",
 };
 
 export default function RootLayout({
