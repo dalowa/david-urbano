@@ -134,7 +134,12 @@ export default function NavBar() {
                   </li>
                 ))}
                 <li className="hover:shadow-md hover:shadow-ColorCeleste bg-ColorAzulMarino text-ColorCeleste bg-ColorE cursor-pointer transition px-10 py-3 lg:py-2  lg:px-6 border border-ColorCeleste rounded-lg hover:bg-ColorCeleste hover:text-ColorAzulMarino">
-                  <a className="">Resume</a>
+                  <a
+                    className=""
+                    href="https://raw.githubusercontent.com/dalowa/david-urbano/main/public/Documents/David-Urbano-CV.pdf"
+                  >
+                    Resume
+                  </a>
                 </li>
               </ul>
             </nav>
