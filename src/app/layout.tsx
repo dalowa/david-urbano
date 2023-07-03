@@ -27,8 +27,8 @@ export default function RootLayout({
           content="https://raw.githubusercontent.com/dalowa/david-urbano/main/public/profile.png"
         />
         <meta property="og:image:type" content="<generated>" />
-        <meta property="og:image:width" content="<generated>" />
-        <meta property="og:image:height" content="<generated>" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
         <link
           rel="icon"
           href="https://raw.githubusercontent.com/dalowa/david-urbano/cb99741e256698f6151e2ba880a8aa50723d6eeb/public/new-d.svg"
