@@ -11,7 +11,9 @@ const RobotoMono = Roboto_Mono({
 
 export const metadata = {
   title: "David Urbano",
-  description: "Software Engineer - Web Developer",
+  description: "Web Developer - Software Engineer Student",
+  image:
+    "https://raw.githubusercontent.com/dalowa/david-urbano/main/public/profile.png",
 };
 
 export default function RootLayout({
@@ -22,6 +24,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <meta
+          property="og:image"
+          content="https://raw.githubusercontent.com/dalowa/david-urbano/main/public/profile.png"
+        />
+        <meta property="og:image:type" content="<generated>" />
+        <meta property="og:image:width" content="<generated>" />
+        <meta property="og:image:height" content="<generated>" />
         <link
           rel="icon"
           href="https://raw.githubusercontent.com/dalowa/david-urbano/cb99741e256698f6151e2ba880a8aa50723d6eeb/public/new-d.svg"
