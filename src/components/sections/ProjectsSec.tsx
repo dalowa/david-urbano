@@ -1,37 +1,8 @@
-import Image from "next/image";
-
 export default function ProjectsSec() {
   return (
-    <section>
+    <section className=" bg-ColorAzulMarino py-44 min-h-screen flex flex-col items-start justify-center w-10/12 mx-auto gap-7 sm:gap-10 lg:gap-3 lg:w-10/12 xl:w-9/12 2xl:w-7/12 lg:flex-row">
       <div>
         <h2>{`=> Projects`}</h2>
-        <div>
-          <div>
-            <Image
-              src={"/public/ProjectsImages/TheDefinitiveMainPage.png"}
-              alt="The Definitive Main Page"
-              width={200}
-              height={200}
-            />
-            <div>
-              <h4></h4>
-              <p></p>
-              <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-              </ul>
-              {/* <ul>
-                <li>
-                  <Image />
-                </li>
-                <li>
-                  <Image />
-                </li>
-              </ul> */}
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );
