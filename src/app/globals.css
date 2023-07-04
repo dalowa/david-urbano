@@ -43,3 +43,6 @@ html {
     }
   }
 
+  .vertical-text {
+    writing-mode: vertical-rl;
+  }
