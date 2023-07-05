@@ -46,3 +46,7 @@ html {
   .vertical-text {
     writing-mode: vertical-rl;
   }
+
+  input, textarea {
+    all: unset;
+  }
