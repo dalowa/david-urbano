@@ -19,8 +19,7 @@ const ContactUs = () => {
           "service_gefud4l",
           "template_skx8q7j",
           form.current,
-          "below"
-          /* BQXPwWgFdBm2WrBKO */
+          "BQXPwWgFdBm2WrBKO"
         )
         .then(
           (result: EmailJSResponseStatus) => {
