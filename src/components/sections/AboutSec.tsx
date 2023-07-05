@@ -8,6 +8,7 @@ export default function AboutSec() {
     "Typescript",
     "TailwindCSS",
     "Git",
+    "Boostrap",
   ];
 
   return (
@@ -32,6 +33,7 @@ export default function AboutSec() {
           <a
             href="https://isil.pe/"
             target="_blank"
+            rel="noreferrer"
             className="text-ColorCeleste font-bold"
           >
             ISIL
