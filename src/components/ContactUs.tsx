@@ -10,6 +10,15 @@ const ContactUs = () => {
   const [isEmailValid, setIsEmailValid] = useState<boolean>(false);
   const [isMessageValid, setIsMessageValid] = useState<boolean>(false);
 
+  const [messageSent, setIsMessageSent] = useState("");
+
+  const handleButtonClick = () => {
+    setIsMessageSent("Message sent successfully");
+    setTimeout(() => {
+      setIsMessageSent("");
+    }, 7000); // 7 segundos en milisegundos
+  };
+
   const sendEmail = (e: SyntheticEvent) => {
     e.preventDefault();
 
@@ -79,55 +88,61 @@ const ContactUs = () => {
   };
 
   return (
-    <form
-      ref={form}
-      onSubmit={sendEmail}
-      className="flex flex-col gap-10 w-11/12 md:w-9/12 lg:w-7/12 xl:w-6/12 2xl:w-5/12"
-    >
-      <div className={divInputClass}>
-        <label htmlFor="user_name" className={labelClass}>
-          Name :
-        </label>
-        <input
-          className={inputClass}
-          type="text"
-          name="user_name"
-          id="user_name"
-          onChange={(e) => validateName(e.target.value)}
-        />
-      </div>
-      <div className={divInputClass}>
-        <label htmlFor="user_email" className={labelClass}>
-          Email :
-        </label>
-        <input
-          className={inputClass}
-          type="email"
-          name="user_email"
-          id="user_email"
-          onChange={(e) => validateEmail(e.target.value)}
-        />
-      </div>
-      <div className={divInputClass}>
-        <label htmlFor="message" className={labelClass}>
-          Message :
-        </label>
-        <textarea
-          className={inputClass}
-          name="message"
-          id="message"
-          onChange={(e) => validateMessage(e.target.value)}
-        />
-      </div>
-
-      <button
-        type="submit"
-        className="border border-ColorCeleste rounded-md text-ColorCeleste py-2 mx-auto w-6/12 text-xl sm:text-2xl disabled:opacity-75 disabled:border-ColorGrisOscuro disabled:text-ColorGrisOscuro"
-        disabled={!isFormValid}
+    <>
+      <form
+        ref={form}
+        onSubmit={sendEmail}
+        className="flex flex-col gap-10 w-11/12 md:w-9/12 lg:w-7/12 xl:w-6/12 2xl:w-5/12"
       >
-        Send
-      </button>
-    </form>
+        <div className={divInputClass}>
+          <label htmlFor="user_name" className={labelClass}>
+            Name :
+          </label>
+          <input
+            className={inputClass}
+            type="text"
+            name="user_name"
+            id="user_name"
+            onChange={(e) => validateName(e.target.value)}
+          />
+        </div>
+        <div className={divInputClass}>
+          <label htmlFor="user_email" className={labelClass}>
+            Email :
+          </label>
+          <input
+            className={inputClass}
+            type="email"
+            name="user_email"
+            id="user_email"
+            onChange={(e) => validateEmail(e.target.value)}
+          />
+        </div>
+        <div className={divInputClass}>
+          <label htmlFor="message" className={labelClass}>
+            Message :
+          </label>
+          <textarea
+            className={inputClass}
+            name="message"
+            id="message"
+            onChange={(e) => validateMessage(e.target.value)}
+          />
+        </div>
+
+        <button
+          type="submit"
+          className="border border-ColorCeleste rounded-md text-ColorCeleste py-2 mx-auto w-6/12 text-xl sm:text-2xl disabled:opacity-75 disabled:border-ColorGrisOscuro disabled:text-ColorGrisOscuro"
+          disabled={!isFormValid}
+          onClick={handleButtonClick}
+        >
+          Send
+        </button>
+      </form>
+      <span className="text-ColorCeleste font-regula w-full h-7 text-center">
+        {messageSent}
+      </span>
+    </>
   );
 };
 
