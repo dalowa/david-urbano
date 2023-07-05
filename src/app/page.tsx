@@ -1,5 +1,6 @@
 import NavBar from "@/components/NavBar";
 import AboutSec from "@/components/sections/AboutSec";
+import ContactSec from "@/components/sections/ContactSec";
 import FooterSec from "@/components/sections/FooterSec";
 
 import HomeSec from "@/components/sections/HomeSec";
@@ -13,6 +14,7 @@ export default function Home() {
         <HomeSec />
         <AboutSec />
         {/* <ProjectsSec /> */}
+        <ContactSec />
       </main>
       <FooterSec />
     </>
