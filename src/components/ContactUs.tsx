@@ -48,19 +48,18 @@ const ContactUs = () => {
   const labelClass = "text-base sm:text-xl  ";
 
   const validateName = (value: string) => {
-    // Agrega aquí tu lógica de validación para el nombre
-    // Por ejemplo, puedes verificar si el valor tiene una longitud mínima requerida
-    setIsNameValid(value.length >= 2);
-    if (isNameValid && isEmailValid && isMessageValid) {
-      setIsFormValid(true);
-    } else {
-      setIsFormValid(false);
+    if (value.length >= 2) {
+      setIsNameValid(value.length >= 2);
+      if (isNameValid && isEmailValid && isMessageValid) {
+        setIsFormValid(true);
+      }
+      return;
     }
+
+    setIsFormValid(false);
   };
 
   const validateEmail = (value: string) => {
-    // Agrega aquí tu lógica de validación para el email
-    // Por ejemplo, puedes utilizar expresiones regulares o librerías de validación
     if (/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(value)) {
       setIsEmailValid(
         /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(value)
@@ -71,20 +70,18 @@ const ContactUs = () => {
       return;
     }
 
-    console.log(isEmailValid);
-
     setIsFormValid(false);
   };
 
   const validateMessage = (value: string) => {
-    // Agrega aquí tu lógica de validación para el mensaje
-    // Por ejemplo, puedes verificar si el valor tiene una longitud mínima requerida
-    setIsMessageValid(value.length >= 10);
-    if (isNameValid && isEmailValid && isMessageValid) {
-      setIsFormValid(true);
-    } else {
-      setIsFormValid(false);
+    if (value.length >= 10) {
+      setIsMessageValid(value.length >= 10);
+      if (isNameValid && isEmailValid && isMessageValid) {
+        setIsFormValid(true);
+      }
+      return;
     }
+    setIsMessageValid(false);
   };
 
   return (
