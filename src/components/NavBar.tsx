@@ -123,7 +123,7 @@ export default function NavBar() {
                 {NavBarOptions.map((e, i) => (
                   <li
                     key={i}
-                    className="transition px-2 py-3 text-ColorGrisClaro hover:border-b-2 border-ColorCeleste font-fontRobotoMono flex justify-center flex-col lg:flex-row items-center gap-1 rounded-xl lg:py-1 cursor-pointer md:p-5 lg:px-2"
+                    className="transition px-2 py-3 text-ColorGrisClaro hover:text-ColorCeleste font-fontRobotoMono flex justify-center flex-col lg:flex-row items-center gap-1 rounded-xl lg:py-1 cursor-pointer md:p-5 lg:px-2"
                   >
                     <a href={`#${e}`} className="" onClick={handleOpenNav}>
                       <span className="text-ColorCeleste text-sm mr-1">{`0${
