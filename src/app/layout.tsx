@@ -1,4 +1,6 @@
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/react";
+
 import { Inter, Fira_Code, Roboto_Mono } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"], variable: "--fontInter" });
@@ -38,6 +40,7 @@ export default function RootLayout({
         className={`${inter.variable} ${FiraCode.variable} ${RobotoMono.variable}} bg-ColorAzulMarino`}
       >
         {children}
+        <Analytics />
       </body>
     </html>
   );
