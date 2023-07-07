@@ -14,6 +14,7 @@ html {
 /* width */
 ::-webkit-scrollbar {
     width: 3px;
+    height: 5px;
   }
   
   /* Track */
@@ -28,7 +29,7 @@ html {
   
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: #0a192f;
+    background: #ccd6f6;
   }
 
   body.hide {
