@@ -1,4 +1,6 @@
-const ProjectsDataList = [{
+import Project from "./InterfaceProject";
+
+const ProjectsDataList:Project[] = [{
     isRight:true,
     id:"01",
     type:"Personal Project",
