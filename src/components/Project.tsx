@@ -57,7 +57,7 @@ export default function Project({
             <h5 className="text-white font-bold text-projectTitle">{title}</h5>
           </div>
           <p
-            className={`z-20 text-ColorGrisClaro my-5 w-10/12 md:w-10/12 mx-auto lg:bg-ColorProjectText lg:p-5 lg:my-1 lg:mx-0 lg:w-full ${
+            className={`lg:z-20 text-ColorGrisClaro my-5 w-10/12 md:w-10/12 mx-auto lg:bg-ColorProjectText lg:p-5 lg:my-1 lg:mx-0 lg:w-full ${
               isRight ? "lg:text-right" : "lg:text-left"
             }`}
           >
