@@ -56,12 +56,12 @@ export default function NavBar() {
                     previousScrollPosition == 0
                       ? "py-6 sm:py-3 lg:py-5 xl:py-5"
                       : "py-3 sm:py-1 lg:py-3 xl:py-2"
-                  } fixed w-full z-20 top-0 bg-transparent lg:w-auto  lg:bg-transparent lg:px-10`
+                  } fixed w-full z-60 top-0 bg-transparent lg:w-auto  lg:bg-transparent lg:px-10`
                 : ` transition-all flex items-center justify-between p-6 ${
                     previousScrollPosition == 0
                       ? "py-6 lg:bg-transparent sm:py-4 lg:py-5 xl:py-5"
                       : "py-3 lg:bg-transparent sm:py-1 lg:py-2 xl:py-2 "
-                  } fixed w-full z-20 top-0 bg-ColorAzulMarinoOpaco lg:w-auto lg:px-10 `
+                  } fixed w-full z-60 top-0 bg-ColorAzulMarinoOpaco lg:w-auto lg:px-10 `
             }
           >
             <Image
@@ -104,8 +104,8 @@ export default function NavBar() {
           <aside
             className={
               isOpen
-                ? `fixed flex w-screen h-screen z-10 `
-                : `hidden lg:flex z-10`
+                ? `fixed flex w-screen h-screen z-50 `
+                : `hidden lg:flex z-50`
             }
           >
             <div
@@ -117,7 +117,7 @@ export default function NavBar() {
                 previousScrollPosition == 0
                   ? "lg:w-full lg:py-6 xl:py-8 "
                   : "lg:w-full lg:py-3 xl:py-4 shadow-lg shadow-ColorAzulMarino"
-              } lg:px-10 lg:fixed lg:bg-ColorAzulMarinoOpaco   lg:z-10`}
+              } lg:px-10 lg:fixed lg:bg-ColorAzulMarinoOpaco   lg:z-50`}
             >
               <ul className="font-PrimaryFont text-ColorE flex flex-col gap-5 lg:items-center text-navBarMobile lg:flex-row lg:justify-end lg:w-full lg:text-navBarDesktop lg:text-ColorB lg:px-5 md:gap-2 lg:gap-3 xl:gap-5">
                 {NavBarOptions.map((e, i) => (
