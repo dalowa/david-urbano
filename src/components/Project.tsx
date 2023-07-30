@@ -58,7 +58,7 @@ export default function Project({
           </div>
           <p
             className={`z-20 text-ColorGrisClaro my-5 w-10/12 md:w-10/12 mx-auto lg:bg-ColorProjectText lg:p-5 lg:my-1 lg:mx-0 lg:w-full ${
-              isRight ? "text-right" : "text-left"
+              isRight ? "lg:text-right" : "lg:text-left"
             }`}
           >
             {description}
