@@ -22,7 +22,15 @@ export default function Project({
         }
       >
         <div
-          className={` w-full min-h-projectMinHeight bg-top bg-cover bg-no-repeat bg-bg${id} sm:bg-bg${id}sm md:bg-bg${id}md lg:bg-bg${id}lg xl:bg-bg${id}xl 2xl:bg-bg${id}2xl lg:w-7/12`}
+          className={
+            id == "01"
+              ? "w-full min-h-projectMinHeight bg-top bg-cover bg-no-repeat bg-bg01 sm:bg-bg01sm md:bg-bg01md lg:bg-bg01lg xl:bg-bg01xl 2xl:bg-bg012xl lg:w-7/12"
+              : id == "02"
+              ? "w-full min-h-projectMinHeight bg-top bg-cover bg-no-repeat bg-red-600 lg:w-7/12"
+              : id == "03"
+              ? "w-full min-h-projectMinHeight bg-top bg-cover bg-no-repeat bg-white lg:w-7/12"
+              : "w-full min-h-projectMinHeight bg-top bg-cover bg-no-repeat bg-green-500 lg:w-7/12"
+          }
         ></div>
         <a
           className={
