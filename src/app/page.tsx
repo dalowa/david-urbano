@@ -13,7 +13,7 @@ export default function Home() {
       <main className="">
         <HomeSec />
         <AboutSec />
-        {/* <ProjectsSec /> */}
+        <ProjectsSec />
         <ContactSec />
       </main>
       <FooterSec />
