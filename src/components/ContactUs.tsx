@@ -77,7 +77,7 @@ const ContactUs = () => {
     if (value.length >= 10) {
       setIsMessageValid(value.length >= 10);
       if (isNameValid && isEmailValid && isMessageValid) {
-        setIsFormValid(true);
+        setIsFormValid(false);
       }
       return;
     }
