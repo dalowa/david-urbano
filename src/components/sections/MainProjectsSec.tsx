@@ -1,7 +1,7 @@
-import Project from "../Project";
+import MainProject from "../MainProject";
 import ProjectsDataList from "@/data/ProjectsDataList";
 
-export default function ProjectsSec() {
+export default function MainProjectsSec() {
   return (
     <section
       id="Projects"
@@ -13,7 +13,7 @@ export default function ProjectsSec() {
       </div>
       <div className="px-2 w-full flex flex-col gap-10">
         {ProjectsDataList.map((e, i) => (
-          <Project
+          <MainProject
             isRight={e.isRight}
             key={i}
             id={e.id}
@@ -23,7 +23,7 @@ export default function ProjectsSec() {
             techList={e.techList}
             linkDeploy={e.linkDeploy}
             linkGithub={e.linkGithub}
-          ></Project>
+          ></MainProject>
         ))}
       </div>
     </section>

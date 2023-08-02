@@ -8,7 +8,6 @@ export default function AboutSec() {
     "Typescript",
     "TailwindCSS",
     "Git",
-    "Boostrap",
   ];
 
   return (
