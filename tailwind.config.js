@@ -37,8 +37,8 @@ module.exports = {
         navBarDesktop: "clamp(10px, 5vw, 15px)",
         titleSection: "clamp(22px, 5vw, 28px)",
         numberTitleSection: "clamp(15px, 3vw, 20px)",
-        sectionText: "clamp(16px, 3vw, 20px)",
-        techList: "clamp(17px, 2vw, 20px)",
+        sectionText: "clamp(17px, 3vw, 19px)",
+        techList: "clamp(15px, 2vw, 17px)",
         projectTitle: "clamp(22px, 3vw, 30px)",
       },
       backgroundImage: {

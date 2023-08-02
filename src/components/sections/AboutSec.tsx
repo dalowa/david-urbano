@@ -15,13 +15,13 @@ export default function AboutSec() {
       className="bg-ColorAzulMarino py-44 min-h-screen flex flex-col items-start justify-center w-10/12 mx-auto gap-7 sm:gap-10 lg:gap-3 lg:w-10/12 xl:w-9/12 2xl:w-7/12 lg:flex-row"
       id="About"
     >
-      <div className="flex flex-col gap-5 lg:w-7/12">
+      <div className="flex flex-col gap-5 lg:w-6/12">
         <div className="text-ColorGrisClaro text-titleSection font-fontInter font-semibold flex w-full gap-2 items-center leading-none">
           <span className="text-ColorCeleste text-numberTitleSection w-1/12">
             02.
           </span>
-          <h2 className="w-5/12">About Me</h2>
-          <div className="h-0.5 w-6/12 bg-ColorGrisOscuro"></div>
+          <h2 className="w-4/12">About Me</h2>
+          <div className="h-0.5 w-8/12 bg-ColorGrisOscuro"></div>
         </div>
         <p className="text-ColorGris text-sectionText">
           Hello! My name is David and I enjoy creating things that live on the
@@ -61,7 +61,7 @@ export default function AboutSec() {
           width={250}
           height={0o0}
           priority={true}
-          className="mt-5 bg-white w-11/12 sm:w-7/12 md:w-6/12 lg:w-10/12 mx-auto p-1 border-2 rounded-sm border-ColorCeleste shadow-2xl shadow-ColorCeleste"
+          className="mt-5 bg-white w-11/12 sm:w-7/12 md:w-6/12 lg:w-8/12 mx-auto p-1 border-2 rounded-sm border-ColorCeleste shadow-2xl shadow-ColorCeleste"
         />
       </div>
     </section>
