@@ -12,11 +12,7 @@ module.exports = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
-      fontFamily: {
-        fontInter: ["var(--fontInter)"],
-        fontFiraCode: ["var(--fontFiraCode)"],
-        fontRobotoMono: ["var(--fontRobotoMono)"],
-      },
+
       colors: {
         ColorCeleste: "#64ffda",
         ColorCelesteFiltro: "#64ffda26",
