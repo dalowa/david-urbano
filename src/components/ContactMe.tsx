@@ -3,7 +3,7 @@
 import React, { useRef, SyntheticEvent, useState } from "react";
 import emailjs, { EmailJSResponseStatus } from "@emailjs/browser";
 
-const ContactUs = () => {
+const ContactMe = () => {
   const form = useRef<HTMLFormElement>(null);
   const [isFormValid, setIsFormValid] = useState<boolean>(false);
   const [isNameValid, setIsNameValid] = useState<boolean>(false);
@@ -143,4 +143,4 @@ const ContactUs = () => {
   );
 };
 
-export default ContactUs;
+export default ContactMe;
