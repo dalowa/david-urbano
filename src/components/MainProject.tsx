@@ -2,7 +2,7 @@ import Project from "@/data/InterfaceProject";
 import IconDeploy from "./icons/IconDeploy";
 import IconGithub from "./icons/IconGithub";
 
-export default function Project({
+export default function MainProject({
   isRight,
   id,
   type,
