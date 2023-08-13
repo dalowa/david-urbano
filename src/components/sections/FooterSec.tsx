@@ -12,7 +12,10 @@ export default function FooterSec() {
       <footer className=" py-2">
         <div className=" flex w-full gap-10 lg:gap-6 justify-center items-center py-4 lg:fixed lg:left-10 lg:bottom-0 lg:flex-col lg:w-auto lg:p-0">
           <IconGithub Link="https://github.com/dalowa" Class={iconClass} />
-          <IconInstagram Link="" Class={iconClass} />
+          <IconInstagram
+            Link="https://www.instagram.com/da_lo_wa/"
+            Class={iconClass}
+          />
           <IconTwitter
             Link="https://twitter.com/David_urbano_"
             Class={iconClass}
